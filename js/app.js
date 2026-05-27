@@ -134,15 +134,15 @@ const translations = {
       "nav.map": "マップ",
       "nav.quests": "クエスト",
       "nav.badges": "バッジ",
-      "nav.saved": "保存",
+      "nav.saved": "保存リスト",
       "nav.collection": "図鑑",
       "hero.eyebrow": "旅行者向けグルメRPG",
       "hero.title": "Explore Japan, one dish at a time.",
       "hero.copy": "ご当地グルメのクエストを達成してXPを獲得し、日本食図鑑を埋めていく旅行アプリです。",
-      "hero.cta": "クエスト開始",
+      "hero.cta": "Start Quest",
       "dashboard.completed": "達成数",
       "dashboard.rank": "ランク",
-      "dashboard.want": "食べたい",
+      "dashboard.want": "食べたい！",
       "dashboard.save": "保存",
       "map.eyebrow": "クエストマップ",
       "map.title": "Choose a region",
@@ -185,7 +185,7 @@ const translations = {
       allergyNote: "アレルギー注意",
       travelTip: "旅行Tips",
       quest: "クエスト",
-      noSaved: "保存した料理はまだありません。料理カードから「食べたい」を押してください。",
+      noSaved: "保存した料理はまだありません。料理カードから「食べたい！」を押してください。",
       dishesCompleted: "品達成"
     },
     regions: {
@@ -298,12 +298,12 @@ const translations = {
       }
     },
     badges: {
-      "first-bite": { name: "はじめの一口", description: "最初のフードクエストを達成する。" },
-      "tokyo-taster": { name: "東京テイスター", description: "東京のクエストをすべて達成する。" },
-      "kansai-street": { name: "関西ストリートハンター", description: "大阪の屋台グルメを両方達成する。" },
-      "noodle-chaser": { name: "麺チェイサー", description: "麺類クエストをすべて達成する。" },
-      "seafood-scout": { name: "海鮮スカウト", description: "海鮮クエストをすべて達成する。" },
-      "food-master": { name: "フードクエストマスター", description: "図鑑をすべてコンプリートする。" }
+      "first-bite": { name: "はじめの一口", description: "最初のフードクエストを達成する" },
+      "tokyo-taster": { name: "東京テイスター", description: "東京のクエストをすべて達成する" },
+      "kansai-street": { name: "関西ストリートハンター", description: "大阪の屋台グルメを両方達成する" },
+      "noodle-chaser": { name: "麺チェイサー", description: "麺類クエストをすべて達成する" },
+      "seafood-scout": { name: "海鮮スカウト", description: "海鮮クエストをすべて達成する" },
+      "food-master": { name: "フードクエストマスター", description: "図鑑をすべてコンプリートする" }
     }
   }
 };
