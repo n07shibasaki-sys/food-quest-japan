@@ -9,7 +9,7 @@ FOOD QUEST JAPAN is a portfolio web app concept for travelers who want to discov
 GitHub Pages URL:
 
 ```txt
-https://n07shibasaki-sys.github.io/food-quest-japan/
+https://your-github-username.github.io/food-quest-japan/
 ```
 
 ## Concept
@@ -27,6 +27,7 @@ The target user is an international traveler visiting Japan who wants to answer 
 
 - Region-based food quest map
 - Food quest cards with XP, difficulty, allergy notes, and travel tips
+- 14 Japanese food quests across Tokyo, Osaka, Kyoto, Fukuoka, Hokkaido, Nagoya, Okinawa, Hiroshima, and Sendai
 - Search by dish name, region, type, or keyword
 - Type filter for noodles, seafood, street food, dessert, and vegetarian dishes
 - Food detail modal with ordering phrase and travel-friendly information
@@ -70,6 +71,7 @@ food-quest-japan/
   css/
     style.css
   js/
+    data.js
     app.js
   images/
 ```
@@ -77,6 +79,7 @@ food-quest-japan/
 ## Highlights
 
 - Built as a single-page MVP to keep the first version simple and easy to publish.
+- Separates food quest data into `js/data.js` and app behavior into `js/app.js`.
 - Uses JavaScript data objects to manage dishes, badges, progress, saved items, and translations.
 - Saves user progress in the browser using localStorage.
 - Designed around a clear portfolio concept: "Gourmet x RPG".
@@ -108,6 +111,7 @@ This project is ready to publish as a static website with GitHub Pages.
    - `README.md`
    - `.nojekyll`
    - `css/style.css`
+   - `js/data.js`
    - `js/app.js`
    - `images/screenshot-home.svg`
 3. Open the repository on GitHub.

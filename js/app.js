@@ -1,117 +1,4 @@
-const foods = [
-  {
-    id: "ramen",
-    name: "Ramen",
-    region: "Tokyo",
-    type: "Noodles",
-    xp: 40,
-    mark: "R",
-    visual: "ramen",
-    difficulty: "Easy",
-    allergy: "Wheat, soy, egg may be included",
-    phrase: "Ramen o hitotsu kudasai.",
-    tip: "Look for ticket machines near the entrance at many ramen shops.",
-    description: "A rich noodle quest with many local styles."
-  },
-  {
-    id: "sushi",
-    name: "Sushi",
-    region: "Tokyo",
-    type: "Seafood",
-    xp: 50,
-    mark: "S",
-    visual: "sushi",
-    difficulty: "Easy",
-    allergy: "Fish, shellfish, soy",
-    phrase: "Osusume no sushi wa nan desu ka?",
-    tip: "Counter sushi is friendly if you order one or two pieces at a time.",
-    description: "A classic Japan quest for fresh fish and rice."
-  },
-  {
-    id: "takoyaki",
-    name: "Takoyaki",
-    region: "Osaka",
-    type: "Street food",
-    xp: 35,
-    mark: "T",
-    visual: "takoyaki",
-    difficulty: "Easy",
-    allergy: "Wheat, egg, octopus",
-    phrase: "Takoyaki o hitotsu kudasai.",
-    tip: "It is usually very hot inside, so wait a moment before eating.",
-    description: "Crispy outside, soft inside, full Osaka energy."
-  },
-  {
-    id: "okonomiyaki",
-    name: "Okonomiyaki",
-    region: "Osaka",
-    type: "Street food",
-    xp: 45,
-    mark: "O",
-    visual: "okonomiyaki",
-    difficulty: "Normal",
-    allergy: "Wheat, egg, seafood may be included",
-    phrase: "Okonomiyaki o onegai shimasu.",
-    tip: "Some restaurants cook it for you, others let you grill it at the table.",
-    description: "A savory grill quest with sauce and toppings."
-  },
-  {
-    id: "matcha",
-    name: "Matcha Sweets",
-    region: "Kyoto",
-    type: "Dessert",
-    xp: 30,
-    mark: "M",
-    visual: "matcha",
-    difficulty: "Easy",
-    allergy: "Milk, wheat may be included",
-    phrase: "Matcha no sweets wa arimasu ka?",
-    tip: "Kyoto cafes often have seasonal matcha parfaits and wagashi sets.",
-    description: "A calm Kyoto dessert quest with green tea flavor."
-  },
-  {
-    id: "yudofu",
-    name: "Yudofu",
-    region: "Kyoto",
-    type: "Vegetarian",
-    xp: 55,
-    mark: "Y",
-    visual: "yudofu",
-    difficulty: "Normal",
-    allergy: "Soy",
-    phrase: "Yudofu o tabetai desu.",
-    tip: "This is a gentle Kyoto option, but sauces may contain fish stock.",
-    description: "A gentle tofu quest from temple food culture."
-  },
-  {
-    id: "hakata-ramen",
-    name: "Hakata Ramen",
-    region: "Fukuoka",
-    type: "Noodles",
-    xp: 60,
-    mark: "H",
-    visual: "hakata",
-    difficulty: "Normal",
-    allergy: "Wheat, pork, soy",
-    phrase: "Kaedama dekimasu ka?",
-    tip: "In Hakata, kaedama means an extra serving of noodles.",
-    description: "A tonkotsu ramen quest from Fukuoka's yatai culture."
-  },
-  {
-    id: "seafood-bowl",
-    name: "Seafood Bowl",
-    region: "Hokkaido",
-    type: "Seafood",
-    xp: 65,
-    mark: "B",
-    visual: "seafood",
-    difficulty: "Hard",
-    allergy: "Fish, shellfish, roe",
-    phrase: "Kaisen-don o hitotsu kudasai.",
-    tip: "Morning markets are a great place to try this in Hokkaido.",
-    description: "A northern seafood quest with fresh local toppings."
-  }
-];
+const { foods } = window.foodQuestData;
 
 const badges = [
   {
@@ -223,7 +110,11 @@ const translations = {
       Osaka: "Osaka",
       Kyoto: "Kyoto",
       Fukuoka: "Fukuoka",
-      Hokkaido: "Hokkaido"
+      Hokkaido: "Hokkaido",
+      Nagoya: "Nagoya",
+      Okinawa: "Okinawa",
+      Hiroshima: "Hiroshima",
+      Sendai: "Sendai"
     },
     types: {
       Noodles: "Noodles",
@@ -302,7 +193,11 @@ const translations = {
       Osaka: "大阪",
       Kyoto: "京都",
       Fukuoka: "福岡",
-      Hokkaido: "北海道"
+      Hokkaido: "北海道",
+      Nagoya: "名古屋",
+      Okinawa: "沖縄",
+      Hiroshima: "広島",
+      Sendai: "仙台"
     },
     types: {
       Noodles: "麺類",
@@ -364,6 +259,42 @@ const translations = {
         description: "北海道の新鮮な海の幸をのせた丼クエスト。",
         allergy: "魚、甲殻類、魚卵",
         tip: "北海道では朝市で食べる海鮮丼もおすすめです。"
+      },
+      "miso-katsu": {
+        name: "味噌カツ",
+        description: "赤味噌ソースをかけた名古屋名物のカツクエスト。",
+        allergy: "小麦、豚肉、大豆",
+        tip: "名古屋の赤味噌ソースは濃厚で甘みがあり、普通のとんかつソースとは違います。"
+      },
+      hitsumabushi: {
+        name: "ひつまぶし",
+        description: "名古屋らしい食べ方を楽しむ、うなぎご飯クエスト。",
+        allergy: "魚、醤油、小麦を含む場合があります",
+        tip: "そのまま、薬味あり、だし茶漬けの3段階で楽しめます。"
+      },
+      "okinawa-soba": {
+        name: "沖縄そば",
+        description: "豚肉とだしの味わいがある、沖縄の麺料理クエスト。",
+        allergy: "小麦、豚肉、醤油",
+        tip: "名前はそばですが、そば粉ではなく小麦の麺を使うことが多いです。"
+      },
+      "goya-champuru": {
+        name: "ゴーヤチャンプルー",
+        description: "ゴーヤ、豆腐、卵を炒めた沖縄の家庭料理クエスト。",
+        allergy: "卵、大豆、豚肉を含む場合があります",
+        tip: "ゴーヤは苦みがあるので、少し冒険したい旅行者におすすめです。"
+      },
+      "hiroshima-okonomiyaki": {
+        name: "広島お好み焼き",
+        description: "キャベツ、ソース、麺を重ねて楽しむ広島クエスト。",
+        allergy: "小麦、卵、海鮮を含む場合があります",
+        tip: "広島風は生地に混ぜるのではなく、具材を重ねて焼くのが特徴です。"
+      },
+      gyutan: {
+        name: "牛タン",
+        description: "香ばしく焼いた牛タンを味わう仙台クエスト。",
+        allergy: "牛肉、醤油を含む場合があります",
+        tip: "仙台の牛タンは定食で、ご飯やスープと一緒に出ることが多いです。"
       }
     },
     badges: {

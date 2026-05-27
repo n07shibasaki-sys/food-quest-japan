@@ -9,6 +9,8 @@
   --green: #2f8a63;
   --gold: #f1b84b;
   --shadow: 0 18px 40px rgba(21, 34, 56, 0.12);
+  --display-font: Georgia, "Times New Roman", serif;
+  --ui-font: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -22,7 +24,7 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--ui-font);
   background: var(--paper);
 }
 
@@ -58,8 +60,11 @@ button {
 
 .logo {
   color: var(--red);
+  font-family: var(--display-font);
+  font-size: 22px;
   font-weight: 800;
   letter-spacing: 0;
+  text-shadow: 0 2px 0 rgba(241, 184, 75, 0.3);
 }
 
 .nav-links {
@@ -112,8 +117,10 @@ button {
 .hero h1 {
   max-width: 680px;
   margin: 0;
+  font-family: var(--display-font);
   font-size: clamp(42px, 7vw, 82px);
   line-height: 0.98;
+  text-shadow: 0 4px 0 rgba(241, 184, 75, 0.18);
 }
 
 .hero-copy p:not(.eyebrow) {
@@ -152,8 +159,11 @@ button {
   padding: 0 22px;
   color: #ffffff;
   background: var(--red);
+  border: 2px solid rgba(255, 255, 255, 0.72);
   border-radius: 8px;
   box-shadow: var(--shadow);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .hero-panel {
@@ -179,6 +189,7 @@ button {
 
 .hero-panel h2 {
   margin: 22px 0 8px;
+  font-family: var(--display-font);
   font-size: 28px;
 }
 
@@ -264,7 +275,9 @@ main {
 
 .section-heading h2 {
   margin: 0;
+  font-family: var(--display-font);
   font-size: 34px;
+  text-shadow: 0 3px 0 rgba(241, 184, 75, 0.16);
 }
 
 .quest-tools {
@@ -327,6 +340,7 @@ main {
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 8px;
+  letter-spacing: 0.02em;
 }
 
 .region-button.active,
@@ -376,6 +390,10 @@ main {
 .pin-kyoto { top: 55%; left: 38%; }
 .pin-osaka { top: 63%; left: 34%; }
 .pin-fukuoka { bottom: 15%; left: 22%; }
+.pin-nagoya { top: 54%; right: 39%; }
+.pin-okinawa { bottom: 8%; left: 9%; }
+.pin-hiroshima { top: 68%; left: 27%; }
+.pin-sendai { top: 34%; right: 25%; }
 
 .quest-grid,
 .badge-grid,
@@ -653,12 +671,44 @@ main {
   border-radius: 18px 18px 54px 54px;
 }
 
+.food-grill {
+  background: linear-gradient(135deg, #8a4f2f, #d83b31);
+}
+
+.food-grill::before {
+  width: 166px;
+  height: 84px;
+  bottom: 24px;
+  background:
+    linear-gradient(90deg, transparent 0 14%, #2d2d2d 15% 18%, transparent 19% 31%, #2d2d2d 32% 35%, transparent 36% 48%, #2d2d2d 49% 52%, transparent 53%),
+    radial-gradient(ellipse at 30% 48%, #b85e3a 0 18%, transparent 19%),
+    radial-gradient(ellipse at 62% 48%, #d08b4f 0 20%, transparent 21%),
+    #fff2d0;
+  border-radius: 18px;
+}
+
+.food-rice {
+  background: linear-gradient(135deg, #174f7a, #f1b84b);
+}
+
+.food-rice::before {
+  width: 158px;
+  height: 94px;
+  bottom: 20px;
+  background:
+    linear-gradient(35deg, transparent 0 44%, #4b2f22 45% 52%, transparent 53%),
+    radial-gradient(ellipse at 50% 58%, #f7f2e8 0 36%, transparent 37%),
+    #ffffff;
+  border-radius: 18px 18px 54px 54px;
+}
+
 .card-body {
   padding: 18px;
 }
 
 .card-body h3 {
   margin: 0 0 8px;
+  font-family: var(--display-font);
   font-size: 21px;
 }
 
@@ -710,6 +760,7 @@ main {
   color: var(--blue);
   background: #eef6fa;
   border-radius: 8px;
+  letter-spacing: 0.02em;
 }
 
 .want-button {
@@ -720,6 +771,7 @@ main {
   background: #fff6dc;
   border: 1px solid rgba(241, 184, 75, 0.45);
   border-radius: 8px;
+  letter-spacing: 0.02em;
 }
 
 .want-button.wanted {
@@ -732,7 +784,10 @@ main {
   min-height: 42px;
   color: #ffffff;
   background: var(--red);
+  border: 2px solid rgba(255, 255, 255, 0.72);
   border-radius: 8px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .quest-button.completed {
@@ -827,6 +882,7 @@ main {
 
 .modal-body h2 {
   margin: 0 0 10px;
+  font-family: var(--display-font);
   font-size: 36px;
 }
 
@@ -1034,6 +1090,10 @@ main {
   .pin-kyoto { top: 55%; left: 32%; }
   .pin-osaka { top: 64%; left: 26%; }
   .pin-fukuoka { bottom: 14%; left: 10%; }
+  .pin-nagoya { top: 52%; right: 24%; }
+  .pin-okinawa { bottom: 6%; left: 6%; }
+  .pin-hiroshima { top: 72%; left: 22%; }
+  .pin-sendai { top: 32%; right: 14%; }
 
   .food-image {
     min-height: 124px;

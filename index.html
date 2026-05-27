@@ -36,7 +36,7 @@
       <div class="hero-panel" aria-label="Player status preview">
         <span class="level-badge">Lv. 1</span>
         <h2 data-i18n="rank.foodAdventurer">Food Adventurer</h2>
-        <p id="heroProgress">0 / 8 dishes completed</p>
+        <p id="heroProgress">0 / 14 dishes completed</p>
         <div class="progress-track">
           <div class="progress-fill" id="heroProgressBar"></div>
         </div>
@@ -52,7 +52,7 @@
       </article>
       <article>
         <span data-i18n="dashboard.completed">Completed</span>
-        <strong id="completedValue">0 / 8</strong>
+        <strong id="completedValue">0 / 14</strong>
       </article>
       <article>
         <span data-i18n="dashboard.rank">Rank</span>
@@ -81,6 +81,10 @@
         <button class="region-button" data-region="Kyoto">Kyoto</button>
         <button class="region-button" data-region="Fukuoka">Fukuoka</button>
         <button class="region-button" data-region="Hokkaido">Hokkaido</button>
+        <button class="region-button" data-region="Nagoya">Nagoya</button>
+        <button class="region-button" data-region="Okinawa">Okinawa</button>
+        <button class="region-button" data-region="Hiroshima">Hiroshima</button>
+        <button class="region-button" data-region="Sendai">Sendai</button>
       </div>
 
       <div class="map-board" aria-label="Japan food quest map">
@@ -89,6 +93,10 @@
         <button class="map-pin pin-kyoto" data-region="Kyoto">Kyoto</button>
         <button class="map-pin pin-osaka" data-region="Osaka">Osaka</button>
         <button class="map-pin pin-fukuoka" data-region="Fukuoka">Fukuoka</button>
+        <button class="map-pin pin-nagoya" data-region="Nagoya">Nagoya</button>
+        <button class="map-pin pin-okinawa" data-region="Okinawa">Okinawa</button>
+        <button class="map-pin pin-hiroshima" data-region="Hiroshima">Hiroshima</button>
+        <button class="map-pin pin-sendai" data-region="Sendai">Sendai</button>
       </div>
     </section>
 
@@ -114,7 +122,7 @@
           </select>
         </label>
       </div>
-      <p class="result-count" id="resultCount" aria-live="polite">Showing 8 quests</p>
+      <p class="result-count" id="resultCount" aria-live="polite">Showing 14 quests</p>
       <div class="quest-grid" id="questGrid"></div>
     </section>
 
@@ -155,6 +163,7 @@
     </section>
   </div>
 
+  <script src="js/data.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
