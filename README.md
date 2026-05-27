@@ -9,7 +9,7 @@ FOOD QUEST JAPAN is a portfolio web app concept for travelers who want to discov
 GitHub Pages URL:
 
 ```txt
-https://your-github-username.github.io/food-quest-japan/
+https://n07shibasaki-sys.github.io/food-quest-japan/
 ```
 
 ## Concept
