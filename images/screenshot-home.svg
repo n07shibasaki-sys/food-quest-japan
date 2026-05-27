@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">FOOD QUEST JAPAN app preview</title>
+  <desc id="desc">A preview image showing the FOOD QUEST JAPAN hero, player status, quest map, and food quest cards.</desc>
+  <rect width="1280" height="720" fill="#fffaf2"/>
+  <rect width="1280" height="720" fill="url(#soft)"/>
+  <defs>
+    <linearGradient id="soft" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d83b31" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#174f7a" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="redGold" x1="0" x2="1">
+      <stop offset="0" stop-color="#d83b31"/>
+      <stop offset="1" stop-color="#f1b84b"/>
+    </linearGradient>
+    <linearGradient id="blueGreen" x1="0" x2="1">
+      <stop offset="0" stop-color="#174f7a"/>
+      <stop offset="1" stop-color="#2f8a63"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#152238" flood-opacity=".16"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(80 44)">
+    <text x="0" y="0" fill="#d83b31" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">FOOD QUEST JAPAN</text>
+    <g transform="translate(740 -24)" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">
+      <text x="0" y="24">Map</text>
+      <text x="64" y="24">Quests</text>
+      <text x="146" y="24">Badges</text>
+      <text x="230" y="24">Saved</text>
+      <text x="306" y="24">Collection</text>
+    </g>
+    <rect x="1080" y="-28" width="40" height="32" rx="6" fill="#174f7a"/>
+    <text x="1090" y="-7" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800">EN</text>
+  </g>
+
+  <g transform="translate(80 148)">
+    <text x="0" y="0" fill="#d83b31" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800">GOURMET RPG FOR TRAVELERS</text>
+    <text x="0" y="72" fill="#152238" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="900">Explore Japan,</text>
+    <text x="0" y="140" fill="#152238" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="900">one dish at a time.</text>
+    <text x="0" y="192" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="20">Complete regional food quests, earn XP, and fill your</text>
+    <text x="0" y="222" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="20">Japanese food encyclopedia while traveling.</text>
+    <rect x="0" y="258" width="142" height="50" rx="8" fill="#d83b31" filter="url(#shadow)"/>
+    <text x="25" y="290" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800">Start Quest</text>
+  </g>
+
+  <g transform="translate(820 138)" filter="url(#shadow)">
+    <rect width="360" height="250" rx="8" fill="#fff" stroke="#e7ddcf"/>
+    <rect x="28" y="28" width="68" height="38" rx="8" fill="#174f7a"/>
+    <text x="46" y="53" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800">Lv. 1</text>
+    <text x="28" y="112" fill="#152238" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Food Adventurer</text>
+    <text x="28" y="148" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="17">0 / 8 dishes completed</text>
+    <rect x="28" y="184" width="304" height="12" rx="6" fill="#efe6d8"/>
+    <rect x="28" y="184" width="72" height="12" rx="6" fill="url(#redGold)"/>
+  </g>
+
+  <g transform="translate(80 468)" filter="url(#shadow)">
+    <rect width="230" height="118" rx="8" fill="#fff" stroke="#e7ddcf"/>
+    <text x="22" y="38" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800">XP</text>
+    <text x="22" y="82" fill="#152238" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900">0</text>
+    <rect x="254" width="230" height="118" rx="8" fill="#fff" stroke="#e7ddcf"/>
+    <text x="276" y="38" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800">COMPLETED</text>
+    <text x="276" y="82" fill="#152238" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900">0 / 8</text>
+    <rect x="508" width="230" height="118" rx="8" fill="#fff" stroke="#e7ddcf"/>
+    <text x="530" y="38" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800">RANK</text>
+    <text x="530" y="82" fill="#152238" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900">Curious Traveler</text>
+  </g>
+
+  <g transform="translate(820 438)" filter="url(#shadow)">
+    <rect width="360" height="210" rx="8" fill="#d7ecf1" stroke="#e7ddcf"/>
+    <path d="M135 34 C236 64 263 133 196 177 C127 222 74 156 96 84 C104 58 115 42 135 34Z" fill="#174f7a" opacity=".15" stroke="#174f7a" stroke-opacity=".28" stroke-dasharray="8 7" stroke-width="2"/>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" fill="#fff">
+      <rect x="232" y="38" width="84" height="34" rx="17" fill="#d83b31"/>
+      <text x="247" y="60">Hokkaido</text>
+      <rect x="216" y="100" width="62" height="34" rx="17" fill="#d83b31"/>
+      <text x="232" y="122">Tokyo</text>
+      <rect x="116" y="124" width="62" height="34" rx="17" fill="#d83b31"/>
+      <text x="130" y="146">Kyoto</text>
+      <rect x="82" y="156" width="62" height="34" rx="17" fill="#d83b31"/>
+      <text x="98" y="178">Osaka</text>
+    </g>
+  </g>
+
+  <g transform="translate(80 620)" font-family="Arial, Helvetica, sans-serif">
+    <text x="0" y="0" fill="#d83b31" font-size="13" font-weight="800">FOOD QUESTS</text>
+    <text x="0" y="34" fill="#152238" font-size="32" font-weight="900">Complete dishes</text>
+    <g transform="translate(330 -22)">
+      <rect width="146" height="74" rx="8" fill="#fff" stroke="#e7ddcf"/>
+      <rect width="146" height="36" rx="8" fill="url(#redGold)"/>
+      <text x="16" y="59" fill="#152238" font-size="15" font-weight="800">Ramen</text>
+    </g>
+    <g transform="translate(496 -22)">
+      <rect width="146" height="74" rx="8" fill="#fff" stroke="#e7ddcf"/>
+      <rect width="146" height="36" rx="8" fill="url(#blueGreen)"/>
+      <text x="16" y="59" fill="#152238" font-size="15" font-weight="800">Sushi</text>
+    </g>
+  </g>
+</svg>
