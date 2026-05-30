@@ -10,13 +10,13 @@
 <body>
   <header class="site-header">
     <nav class="top-nav" aria-label="Main navigation">
-      <a class="logo" href="#top">FOOD QUEST JAPAN</a>
+      <a class="logo" href="index.html">FOOD QUEST JAPAN</a>
       <div class="nav-links">
-        <a href="#map" data-i18n="nav.map">Map</a>
-        <a href="#quests" data-i18n="nav.quests">Quests</a>
-        <a href="#badges" data-i18n="nav.badges">Badges</a>
-        <a href="#saved" data-i18n="nav.saved">Saved</a>
-        <a href="#collection" data-i18n="nav.collection">Collection</a>
+        <a href="map.html" data-i18n="nav.map">Map</a>
+        <a href="quests.html" data-i18n="nav.quests">Quests</a>
+        <a href="badges.html" data-i18n="nav.badges">Badges</a>
+        <a href="favorite.html" data-i18n="nav.saved">Favorite</a>
+        <a href="collection.html" data-i18n="nav.collection">Collection</a>
       </div>
       <div class="language-toggle" aria-label="Language switcher">
         <button class="language-button active" type="button" data-language="en">EN</button>
@@ -31,7 +31,7 @@
         <p data-i18n="hero.copy">
           Complete regional food quests, earn XP, and fill your Japanese food encyclopedia while traveling.
         </p>
-        <a class="primary-button" href="#quests" data-i18n="hero.cta">Start Quest</a>
+        <a class="primary-button" href="quests.html" data-i18n="hero.cta">Start Quest</a>
       </div>
       <div class="hero-panel" aria-label="Player status preview">
         <span class="level-badge">Lv. 1</span>
@@ -59,7 +59,7 @@
         <strong id="rankValue">Curious Traveler</strong>
       </article>
       <article>
-        <span data-i18n="dashboard.want">Want to Try</span>
+        <span data-i18n="dashboard.want">Favorite</span>
         <strong id="wantValue">0</strong>
       </article>
       <article class="dashboard-action">
@@ -68,91 +68,32 @@
       </article>
     </section>
 
-    <section class="section map-section" id="map">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="map.eyebrow">Quest Map</p>
-        <h2 data-i18n="map.title">Choose a region</h2>
-      </div>
-
-      <div class="region-controls" aria-label="Filter quests by region">
-        <button class="region-button active" data-region="all">All</button>
-        <button class="region-button" data-region="Tokyo">Tokyo</button>
-        <button class="region-button" data-region="Osaka">Osaka</button>
-        <button class="region-button" data-region="Kyoto">Kyoto</button>
-        <button class="region-button" data-region="Fukuoka">Fukuoka</button>
-        <button class="region-button" data-region="Hokkaido">Hokkaido</button>
-        <button class="region-button" data-region="Nagoya">Nagoya</button>
-        <button class="region-button" data-region="Okinawa">Okinawa</button>
-        <button class="region-button" data-region="Hiroshima">Hiroshima</button>
-        <button class="region-button" data-region="Sendai">Sendai</button>
-      </div>
-
-      <div class="map-board" aria-label="Japan food quest map">
-        <button class="map-pin pin-hokkaido" data-region="Hokkaido">Hokkaido</button>
-        <button class="map-pin pin-tokyo" data-region="Tokyo">Tokyo</button>
-        <button class="map-pin pin-kyoto" data-region="Kyoto">Kyoto</button>
-        <button class="map-pin pin-osaka" data-region="Osaka">Osaka</button>
-        <button class="map-pin pin-fukuoka" data-region="Fukuoka">Fukuoka</button>
-        <button class="map-pin pin-nagoya" data-region="Nagoya">Nagoya</button>
-        <button class="map-pin pin-okinawa" data-region="Okinawa">Okinawa</button>
-        <button class="map-pin pin-hiroshima" data-region="Hiroshima">Hiroshima</button>
-        <button class="map-pin pin-sendai" data-region="Sendai">Sendai</button>
-      </div>
-    </section>
-
-    <section class="section" id="quests">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="quests.eyebrow">Food Quests</p>
-        <h2 data-i18n="quests.title">Complete dishes</h2>
-      </div>
-      <div class="quest-tools" aria-label="Search and filter quests">
-        <label class="search-field" for="questSearch">
-          <span data-i18n="filters.search">Search</span>
-          <input id="questSearch" type="search" placeholder="Try ramen, Tokyo, seafood...">
-        </label>
-        <label class="select-field" for="typeFilter">
-          <span data-i18n="filters.type">Type</span>
-          <select id="typeFilter">
-            <option value="all">All types</option>
-            <option value="Noodles">Noodles</option>
-            <option value="Seafood">Seafood</option>
-            <option value="Street food">Street food</option>
-            <option value="Dessert">Dessert</option>
-            <option value="Vegetarian">Vegetarian</option>
-          </select>
-        </label>
-      </div>
-      <p class="result-count" id="resultCount" aria-live="polite">Showing 14 quests</p>
-      <div class="quest-grid" id="questGrid"></div>
-    </section>
-
-    <section class="section badges-section" id="badges">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="badges.eyebrow">Achievements</p>
-        <h2 data-i18n="badges.title">Quest badges</h2>
-      </div>
-      <div class="badge-grid" id="badgeGrid"></div>
-    </section>
-
-    <section class="section saved-section" id="saved">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="saved.eyebrow">Travel Plan</p>
-        <h2 data-i18n="saved.title">Saved for later</h2>
-      </div>
-      <div class="saved-list" id="savedList"></div>
-    </section>
-
-    <section class="section collection-section" id="collection">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="collection.eyebrow">Food Encyclopedia</p>
-        <h2 data-i18n="collection.title">Your collection</h2>
-      </div>
-      <div class="collection-grid" id="collectionGrid"></div>
+    <section class="section page-links" aria-label="App pages">
+      <a class="page-link-card" href="map.html">
+        <span data-i18n="map.eyebrow">Quest Map</span>
+        <strong data-i18n="map.title">Choose a region</strong>
+      </a>
+      <a class="page-link-card" href="quests.html">
+        <span data-i18n="quests.eyebrow">Food Quests</span>
+        <strong data-i18n="quests.title">Complete dishes</strong>
+      </a>
+      <a class="page-link-card" href="badges.html">
+        <span data-i18n="badges.eyebrow">Achievements</span>
+        <strong data-i18n="badges.title">Quest badges</strong>
+      </a>
+      <a class="page-link-card" href="favorite.html">
+        <span data-i18n="saved.eyebrow">Travel Plan</span>
+        <strong data-i18n="saved.title">Favorite</strong>
+      </a>
+      <a class="page-link-card" href="collection.html">
+        <span data-i18n="collection.eyebrow">Food Encyclopedia</span>
+        <strong data-i18n="collection.title">Your collection</strong>
+      </a>
     </section>
   </main>
 
   <footer class="footer">
-    <p>FOOD QUEST JAPAN - Portfolio MVP</p>
+    <p>Made with curiosity by Norik - turning Japanese food into a little adventure.</p>
   </footer>
 
   <div class="modal" id="foodModal" aria-hidden="true">
@@ -165,5 +106,12 @@
 
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <a href="map.html" data-i18n="nav.map">Map</a>
+    <a href="quests.html" data-i18n="nav.quests">Quests</a>
+    <a href="badges.html" data-i18n="nav.badges">Badges</a>
+    <a href="favorite.html" data-i18n="nav.saved">Favorite</a>
+    <a href="collection.html" data-i18n="nav.collection">Collection</a>
+  </nav>
 </body>
 </html>

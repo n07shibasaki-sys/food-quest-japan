@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf2">
+  <title>Quests | FOOD QUEST JAPAN</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-shell">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">FOOD QUEST JAPAN</a>
+      <div class="nav-links">
+        <a href="map.html" data-i18n="nav.map">Map</a>
+        <a href="quests.html" data-i18n="nav.quests">Quests</a>
+        <a href="badges.html" data-i18n="nav.badges">Badges</a>
+        <a href="favorite.html" data-i18n="nav.saved">Favorite</a>
+        <a href="collection.html" data-i18n="nav.collection">Collection</a>
+      </div>
+      <div class="language-toggle" aria-label="Language switcher">
+        <button class="language-button active" type="button" data-language="en">EN</button>
+        <button class="language-button" type="button" data-language="ja">JP</button>
+      </div>
+    </nav>
+    <section class="page-header">
+      <p class="eyebrow" data-i18n="quests.eyebrow">Food Quests</p>
+      <h1 data-i18n="quests.title">Complete dishes</h1>
+    </section>
+  </header>
+
+  <main>
+    <section class="dashboard" aria-label="Current player status">
+      <article><span>XP</span><strong id="xpValue">0</strong></article>
+      <article><span data-i18n="dashboard.completed">Completed</span><strong id="completedValue">0 / 14</strong></article>
+      <article><span data-i18n="dashboard.rank">Rank</span><strong id="rankValue">Curious Traveler</strong></article>
+      <article><span data-i18n="dashboard.want">Favorite</span><strong id="wantValue">0</strong></article>
+      <article class="dashboard-action"><span data-i18n="dashboard.save">Save</span><button class="reset-button" id="resetButton" type="button" data-i18n="actions.reset">Reset Quest</button></article>
+    </section>
+
+    <section class="section" id="quests">
+      <div class="quest-tools" aria-label="Search and filter quests">
+        <label class="search-field" for="questSearch">
+          <span data-i18n="filters.search">Search</span>
+          <input id="questSearch" type="search" placeholder="Try ramen, Tokyo, seafood...">
+        </label>
+        <label class="select-field" for="typeFilter">
+          <span data-i18n="filters.type">Type</span>
+          <select id="typeFilter">
+            <option value="all">All types</option>
+          </select>
+        </label>
+      </div>
+      <p class="result-count" id="resultCount" aria-live="polite">Showing 14 quests</p>
+      <div class="quest-grid" id="questGrid"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Made with curiosity by Norik - turning Japanese food into a little adventure.</p>
+  </footer>
+
+  <div class="modal" id="foodModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" aria-label="Close detail" data-close-modal data-i18n="actions.close">Close</button>
+      <div id="modalContent"></div>
+    </section>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <a href="map.html" data-i18n="nav.map">Map</a>
+    <a href="quests.html" data-i18n="nav.quests">Quests</a>
+    <a href="badges.html" data-i18n="nav.badges">Badges</a>
+    <a href="favorite.html" data-i18n="nav.saved">Favorite</a>
+    <a href="collection.html" data-i18n="nav.collection">Collection</a>
+  </nav>
+</body>
+</html>

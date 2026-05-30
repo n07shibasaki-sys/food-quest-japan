@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf2">
+  <title>Map | FOOD QUEST JAPAN</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-shell">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">FOOD QUEST JAPAN</a>
+      <div class="nav-links">
+        <a href="map.html" data-i18n="nav.map">Map</a>
+        <a href="quests.html" data-i18n="nav.quests">Quests</a>
+        <a href="badges.html" data-i18n="nav.badges">Badges</a>
+        <a href="favorite.html" data-i18n="nav.saved">Favorite</a>
+        <a href="collection.html" data-i18n="nav.collection">Collection</a>
+      </div>
+      <div class="language-toggle" aria-label="Language switcher">
+        <button class="language-button active" type="button" data-language="en">EN</button>
+        <button class="language-button" type="button" data-language="ja">JP</button>
+      </div>
+    </nav>
+    <section class="page-header">
+      <p class="eyebrow" data-i18n="map.eyebrow">Quest Map</p>
+      <h1 data-i18n="map.title">Choose a region</h1>
+    </section>
+  </header>
+
+  <main>
+    <section class="dashboard" aria-label="Current player status">
+      <article><span>XP</span><strong id="xpValue">0</strong></article>
+      <article><span data-i18n="dashboard.completed">Completed</span><strong id="completedValue">0 / 14</strong></article>
+      <article><span data-i18n="dashboard.rank">Rank</span><strong id="rankValue">Curious Traveler</strong></article>
+      <article><span data-i18n="dashboard.want">Favorite</span><strong id="wantValue">0</strong></article>
+    </section>
+
+    <section class="section map-section" id="map">
+      <div class="region-controls" aria-label="Filter quests by region">
+        <button class="region-button active" data-region="all">All</button>
+        <button class="region-button" data-region="Tokyo">Tokyo</button>
+        <button class="region-button" data-region="Osaka">Osaka</button>
+        <button class="region-button" data-region="Kyoto">Kyoto</button>
+        <button class="region-button" data-region="Fukuoka">Fukuoka</button>
+        <button class="region-button" data-region="Hokkaido">Hokkaido</button>
+        <button class="region-button" data-region="Nagoya">Nagoya</button>
+        <button class="region-button" data-region="Okinawa">Okinawa</button>
+        <button class="region-button" data-region="Hiroshima">Hiroshima</button>
+        <button class="region-button" data-region="Sendai">Sendai</button>
+      </div>
+      <div class="map-board" aria-label="Japan food quest map">
+        <button class="map-pin pin-hokkaido" data-region="Hokkaido">Hokkaido</button>
+        <button class="map-pin pin-tokyo" data-region="Tokyo">Tokyo</button>
+        <button class="map-pin pin-kyoto" data-region="Kyoto">Kyoto</button>
+        <button class="map-pin pin-osaka" data-region="Osaka">Osaka</button>
+        <button class="map-pin pin-fukuoka" data-region="Fukuoka">Fukuoka</button>
+        <button class="map-pin pin-nagoya" data-region="Nagoya">Nagoya</button>
+        <button class="map-pin pin-okinawa" data-region="Okinawa">Okinawa</button>
+        <button class="map-pin pin-hiroshima" data-region="Hiroshima">Hiroshima</button>
+        <button class="map-pin pin-sendai" data-region="Sendai">Sendai</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with curiosity by Norik - turning Japanese food into a little adventure.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <a href="map.html" data-i18n="nav.map">Map</a>
+    <a href="quests.html" data-i18n="nav.quests">Quests</a>
+    <a href="badges.html" data-i18n="nav.badges">Badges</a>
+    <a href="favorite.html" data-i18n="nav.saved">Favorite</a>
+    <a href="collection.html" data-i18n="nav.collection">Collection</a>
+  </nav>
+</body>
+</html>

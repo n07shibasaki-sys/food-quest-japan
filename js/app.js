@@ -51,7 +51,7 @@ const translations = {
       "nav.map": "Map",
       "nav.quests": "Quests",
       "nav.badges": "Badges",
-      "nav.saved": "Saved",
+      "nav.saved": "Favorite",
       "nav.collection": "Collection",
       "hero.eyebrow": "Gourmet RPG for travelers",
       "hero.title": "Explore Japan, one dish at a time.",
@@ -59,7 +59,7 @@ const translations = {
       "hero.cta": "Start Quest",
       "dashboard.completed": "Completed",
       "dashboard.rank": "Rank",
-      "dashboard.want": "Want to Try",
+      "dashboard.want": "Favorite",
       "dashboard.save": "Save",
       "map.eyebrow": "Quest Map",
       "map.title": "Choose a region",
@@ -69,8 +69,8 @@ const translations = {
       "filters.type": "Type",
       "badges.eyebrow": "Achievements",
       "badges.title": "Quest badges",
-      "saved.eyebrow": "Travel Plan",
-      "saved.title": "Saved for later",
+      "saved.eyebrow": "Favorite List",
+      "saved.title": "Favorite",
       "collection.eyebrow": "Food Encyclopedia",
       "collection.title": "Your collection",
       "actions.reset": "Reset Quest",
@@ -90,8 +90,8 @@ const translations = {
       noQuests: "No quests found. Try another region, type, or keyword.",
       unknownDish: "Unknown Dish",
       unlockHint: "Complete the quest to unlock it.",
-      wantToTry: "Want to Try",
-      savedToTry: "Saved to Try",
+      wantToTry: "Add Favorite",
+      savedToTry: "Favorited",
       completeQuest: "Complete Quest",
       completed: "Completed",
       viewDetail: "View Detail",
@@ -102,7 +102,7 @@ const translations = {
       allergyNote: "Allergy note",
       travelTip: "Travel tip",
       quest: "Quest",
-      noSaved: "No saved dishes yet. Add Want to Try from a quest card.",
+      noSaved: "No favorite dishes yet. Add Favorite from a quest card.",
       dishesCompleted: "dishes completed"
     },
     regions: {
@@ -134,15 +134,15 @@ const translations = {
       "nav.map": "マップ",
       "nav.quests": "クエスト",
       "nav.badges": "バッジ",
-      "nav.saved": "保存リスト",
+      "nav.saved": "お気に入り",
       "nav.collection": "図鑑",
       "hero.eyebrow": "旅行者向けグルメRPG",
       "hero.title": "Explore Japan, one dish at a time.",
       "hero.copy": "ご当地グルメのクエストを達成してXPを獲得し、日本食図鑑を埋めていく旅行アプリです。",
-      "hero.cta": "Start Quest",
+      "hero.cta": "クエスト開始",
       "dashboard.completed": "達成数",
       "dashboard.rank": "ランク",
-      "dashboard.want": "食べたい！",
+      "dashboard.want": "お気に入り",
       "dashboard.save": "保存",
       "map.eyebrow": "クエストマップ",
       "map.title": "Choose a region",
@@ -152,8 +152,8 @@ const translations = {
       "filters.type": "ジャンル",
       "badges.eyebrow": "実績",
       "badges.title": "Quest badges",
-      "saved.eyebrow": "旅行プラン",
-      "saved.title": "Saved for later",
+      "saved.eyebrow": "お気に入り",
+      "saved.title": "Favorite",
       "collection.eyebrow": "日本食図鑑",
       "collection.title": "Your collection",
       "actions.reset": "リセット",
@@ -173,8 +173,8 @@ const translations = {
       noQuests: "クエストが見つかりません。地域、ジャンル、キーワードを変えてみてください。",
       unknownDish: "未発見の料理",
       unlockHint: "クエストを達成すると解放されます。",
-      wantToTry: "食べたい",
-      savedToTry: "保存済み",
+      wantToTry: "お気に入り追加",
+      savedToTry: "お気に入り済み",
       completeQuest: "達成する",
       completed: "達成済み",
       viewDetail: "詳細を見る",
@@ -185,7 +185,7 @@ const translations = {
       allergyNote: "アレルギー注意",
       travelTip: "旅行Tips",
       quest: "クエスト",
-      noSaved: "保存した料理はまだありません。料理カードから「食べたい！」を押してください。",
+      noSaved: "お気に入りの料理はまだありません。料理カードから「お気に入り追加」を押してください。",
       dishesCompleted: "品達成"
     },
     regions: {
@@ -298,12 +298,12 @@ const translations = {
       }
     },
     badges: {
-      "first-bite": { name: "はじめの一口", description: "最初のフードクエストを達成する" },
-      "tokyo-taster": { name: "東京テイスター", description: "東京のクエストをすべて達成する" },
-      "kansai-street": { name: "関西ストリートハンター", description: "大阪の屋台グルメを両方達成する" },
-      "noodle-chaser": { name: "麺チェイサー", description: "麺類クエストをすべて達成する" },
-      "seafood-scout": { name: "海鮮スカウト", description: "海鮮クエストをすべて達成する" },
-      "food-master": { name: "フードクエストマスター", description: "図鑑をすべてコンプリートする" }
+      "first-bite": { name: "はじめの一口", description: "最初のフードクエストを達成する。" },
+      "tokyo-taster": { name: "東京テイスター", description: "東京のクエストをすべて達成する。" },
+      "kansai-street": { name: "関西ストリートハンター", description: "大阪の屋台グルメを両方達成する。" },
+      "noodle-chaser": { name: "麺チェイサー", description: "麺類クエストをすべて達成する。" },
+      "seafood-scout": { name: "海鮮スカウト", description: "海鮮クエストをすべて達成する。" },
+      "food-master": { name: "フードクエストマスター", description: "図鑑をすべてコンプリートする。" }
     }
   }
 };
@@ -391,21 +391,25 @@ function updateStaticText() {
     element.textContent = t(element.dataset.i18n);
   });
 
-  questSearch.placeholder = label("searchPlaceholder");
+  if (questSearch) {
+    questSearch.placeholder = label("searchPlaceholder");
+  }
 
   document.querySelectorAll(".region-button, .map-pin").forEach((button) => {
     button.textContent = button.dataset.region === "all" ? label("all") : localizeRegion(button.dataset.region);
   });
 
-  typeFilter.innerHTML = `
-    <option value="all">${label("allTypes")}</option>
-    <option value="Noodles">${localizeType("Noodles")}</option>
-    <option value="Seafood">${localizeType("Seafood")}</option>
-    <option value="Street food">${localizeType("Street food")}</option>
-    <option value="Dessert">${localizeType("Dessert")}</option>
-    <option value="Vegetarian">${localizeType("Vegetarian")}</option>
-  `;
-  typeFilter.value = currentType;
+  if (typeFilter) {
+    typeFilter.innerHTML = `
+      <option value="all">${label("allTypes")}</option>
+      <option value="Noodles">${localizeType("Noodles")}</option>
+      <option value="Seafood">${localizeType("Seafood")}</option>
+      <option value="Street food">${localizeType("Street food")}</option>
+      <option value="Dessert">${localizeType("Dessert")}</option>
+      <option value="Vegetarian">${localizeType("Vegetarian")}</option>
+    `;
+    typeFilter.value = currentType;
+  }
 
   languageButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.language === currentLanguage);
@@ -448,12 +452,12 @@ function updateStatus() {
   const totalXp = getTotalXp();
   const progressPercent = (completedCount / foods.length) * 100;
 
-  xpValue.textContent = totalXp;
-  completedValue.textContent = `${completedCount} / ${foods.length}`;
-  rankValue.textContent = t(getRankKey(totalXp));
-  heroProgress.textContent = `${completedCount} / ${foods.length} ${label("dishesCompleted")}`;
-  heroProgressBar.style.width = `${progressPercent}%`;
-  wantValue.textContent = wantFoodIds.size;
+  if (xpValue) xpValue.textContent = totalXp;
+  if (completedValue) completedValue.textContent = `${completedCount} / ${foods.length}`;
+  if (rankValue) rankValue.textContent = t(getRankKey(totalXp));
+  if (heroProgress) heroProgress.textContent = `${completedCount} / ${foods.length} ${label("dishesCompleted")}`;
+  if (heroProgressBar) heroProgressBar.style.width = `${progressPercent}%`;
+  if (wantValue) wantValue.textContent = wantFoodIds.size;
 }
 
 function createQuestCard(food) {
@@ -489,6 +493,8 @@ function createQuestCard(food) {
 }
 
 function openFoodModal(food) {
+  if (!foodModal || !modalContent) return;
+
   const isCompleted = completedFoodIds.has(food.id);
   const isWanted = wantFoodIds.has(food.id);
 
@@ -541,6 +547,8 @@ function openFoodModal(food) {
 }
 
 function closeFoodModal() {
+  if (!foodModal) return;
+
   foodModal.classList.remove("open");
   foodModal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-open");
@@ -591,6 +599,8 @@ function createSavedItem(food) {
 }
 
 function renderQuests() {
+  if (!questGrid) return;
+
   const visibleFoods = foods.filter((food) => {
     const matchesRegion = currentRegion === "all" || food.region === currentRegion;
     const matchesType = currentType === "all" || food.type === currentType;
@@ -609,23 +619,31 @@ function renderQuests() {
     return matchesRegion && matchesType && matchesSearch;
   });
 
-  resultCount.textContent = `${label("showing")} ${visibleFoods.length} ${visibleFoods.length === 1 ? label("questSingular") : label("questPlural")}`;
+  if (resultCount) {
+    resultCount.textContent = `${label("showing")} ${visibleFoods.length} ${visibleFoods.length === 1 ? label("questSingular") : label("questPlural")}`;
+  }
   questGrid.innerHTML = visibleFoods.length
     ? visibleFoods.map(createQuestCard).join("")
     : `<p class="empty-state">${label("noQuests")}</p>`;
 }
 
 function renderCollection() {
+  if (!collectionGrid) return;
+
   collectionGrid.innerHTML = foods.map(createCollectionCard).join("");
 }
 
 function renderBadges() {
+  if (!badgeGrid) return;
+
   const unlockedCount = getUnlockedBadgeCount();
   badgeGrid.innerHTML = badges.map(createBadgeCard).join("");
   badgeGrid.setAttribute("aria-label", `${unlockedCount} of ${badges.length} badges unlocked`);
 }
 
 function renderSavedList() {
+  if (!savedList) return;
+
   const wantedFoods = foods.filter((food) => wantFoodIds.has(food.id));
 
   savedList.innerHTML = wantedFoods.length
@@ -670,7 +688,7 @@ document.addEventListener("click", (event) => {
     saveProgress();
     renderApp();
 
-    if (foodModal.classList.contains("open")) {
+    if (foodModal?.classList.contains("open")) {
       const food = foods.find((item) => item.id === wantedFoodId);
       if (food) {
         openFoodModal(food);
@@ -686,7 +704,7 @@ document.addEventListener("click", (event) => {
     saveProgress();
     renderApp();
 
-    if (foodModal.classList.contains("open")) {
+    if (foodModal?.classList.contains("open")) {
       const food = foods.find((item) => item.id === completedFoodId);
       openFoodModal(food);
     }
@@ -723,17 +741,17 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-questSearch.addEventListener("input", (event) => {
+questSearch?.addEventListener("input", (event) => {
   searchText = event.target.value.trim().toLowerCase();
   renderQuests();
 });
 
-typeFilter.addEventListener("change", (event) => {
+typeFilter?.addEventListener("change", (event) => {
   currentType = event.target.value;
   renderQuests();
 });
 
-resetButton.addEventListener("click", () => {
+resetButton?.addEventListener("click", () => {
   completedFoodIds.clear();
   wantFoodIds.clear();
   saveProgress();

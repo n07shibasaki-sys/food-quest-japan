@@ -9,7 +9,7 @@ FOOD QUEST JAPAN is a portfolio web app concept for travelers who want to discov
 GitHub Pages URL:
 
 ```txt
-https://n07shibasaki-sys.github.io/food-quest-japan/
+https://your-github-username.github.io/food-quest-japan/
 ```
 
 ## Concept
@@ -32,7 +32,7 @@ The target user is an international traveler visiting Japan who wants to answer 
 - Type filter for noodles, seafood, street food, dessert, and vegetarian dishes
 - Food detail modal with ordering phrase and travel-friendly information
 - Complete Quest button that updates XP, rank, progress, and encyclopedia status
-- Want to Try / Saved for later feature
+- Favorite feature
 - Achievement badge system
 - Food encyclopedia with locked and unlocked dish states
 - English / Japanese language switch
@@ -54,9 +54,10 @@ No backend is required for the current MVP. The app runs as a static website.
 - Quest Map
 - Food Quests
 - Quest Badges
-- Saved for Later
+- Favorite
 - Food Encyclopedia
 - Food Detail Modal
+- Mobile bottom navigation
 
 ## Screenshot
 
@@ -67,6 +68,11 @@ No backend is required for the current MVP. The app runs as a static website.
 ```txt
 food-quest-japan/
   index.html
+  map.html
+  quests.html
+  badges.html
+  favorite.html
+  collection.html
   README.md
   css/
     style.css
@@ -78,12 +84,13 @@ food-quest-japan/
 
 ## Highlights
 
-- Built as a single-page MVP to keep the first version simple and easy to publish.
+- Built as a static multi-page MVP that still shares progress through localStorage.
 - Separates food quest data into `js/data.js` and app behavior into `js/app.js`.
-- Uses JavaScript data objects to manage dishes, badges, progress, saved items, and translations.
+- Uses JavaScript data objects to manage dishes, badges, progress, favorite items, and translations.
 - Saves user progress in the browser using localStorage.
 - Designed around a clear portfolio concept: "Gourmet x RPG".
 - Includes multilingual UI to match the international traveler use case.
+- Uses a multi-page static structure while sharing the same browser progress across pages.
 
 ## How to Use
 
@@ -94,7 +101,7 @@ Then try:
 1. Choose a region from the map.
 2. Search or filter food quests.
 3. Open a dish detail.
-4. Save a dish with Want to Try.
+4. Add a dish to Favorite.
 5. Complete quests to earn XP.
 6. Unlock badges and fill the encyclopedia.
 7. Switch between EN and JP.
@@ -108,6 +115,11 @@ This project is ready to publish as a static website with GitHub Pages.
 1. Create a GitHub repository.
 2. Upload or push these files to the repository:
    - `index.html`
+   - `map.html`
+   - `quests.html`
+   - `badges.html`
+   - `favorite.html`
+   - `collection.html`
    - `README.md`
    - `.nojekyll`
    - `css/style.css`
@@ -140,7 +152,7 @@ This project is ready to publish as a static website with GitHub Pages.
 - Add restaurant recommendations
 - Add user login
 - Save progress to a database
-- Add route planning for saved dishes
+- Add route planning for favorite dishes
 - Add allergy and dietary preference filters
 - Deploy with GitHub Pages
 
