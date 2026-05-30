@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap");
+
 :root {
   --ink: #152238;
   --muted: #667085;
@@ -9,8 +11,8 @@
   --green: #2f8a63;
   --gold: #f1b84b;
   --shadow: 0 18px 40px rgba(21, 34, 56, 0.12);
-  --display-font: Georgia, "Times New Roman", serif;
-  --ui-font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  --display-font: "Fredoka", "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+  --ui-font: "Nunito", "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -83,37 +85,43 @@ button {
   border-radius: 0;
   font-family: var(--display-font);
   font-size: 24px;
-  font-weight: 800;
-  letter-spacing: 0;
+  font-weight: 700;
+  letter-spacing: 0.01em;
   box-shadow: none;
-  text-shadow: 0 2px 0 rgba(241, 184, 75, 0.28);
+  text-shadow:
+    0 2px 0 rgba(241, 184, 75, 0.45),
+    0 4px 0 rgba(21, 34, 56, 0.12);
 }
 
 .nav-links {
   display: flex;
-  gap: 6px;
-  padding: 6px;
-  color: #ffffff;
-  background: var(--blue);
-  border: 1px solid rgba(255, 255, 255, 0.52);
-  border-radius: 8px;
-  box-shadow: 0 10px 24px rgba(21, 34, 56, 0.12);
+  gap: 18px;
+  padding: 0;
+  color: var(--blue);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .nav-links a {
   display: grid;
   place-items: center;
   min-height: 34px;
-  padding: 0 12px;
-  border-radius: 6px;
+  padding: 0;
+  border-radius: 0;
   white-space: nowrap;
 }
 
 .nav-links a:hover {
-  color: var(--ink);
-  background: var(--gold);
+  color: var(--red);
+  background: transparent;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .language-toggle {
@@ -161,18 +169,24 @@ button {
   max-width: 720px;
   margin: 0;
   font-family: var(--display-font);
+  font-weight: 700;
   font-size: clamp(42px, 6vw, 72px);
   line-height: 1;
-  text-shadow: 0 4px 0 rgba(241, 184, 75, 0.18);
+  text-shadow:
+    0 3px 0 rgba(241, 184, 75, 0.5),
+    0 7px 0 rgba(21, 34, 56, 0.14);
 }
 
 .hero h1 {
   max-width: 680px;
   margin: 0;
   font-family: var(--display-font);
+  font-weight: 700;
   font-size: clamp(42px, 7vw, 82px);
   line-height: 0.98;
-  text-shadow: 0 4px 0 rgba(241, 184, 75, 0.18);
+  text-shadow:
+    0 3px 0 rgba(241, 184, 75, 0.5),
+    0 7px 0 rgba(21, 34, 56, 0.14);
 }
 
 .hero-copy p:not(.eyebrow) {
@@ -216,6 +230,7 @@ button {
   box-shadow: var(--shadow);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-shadow: 0 2px 0 rgba(21, 34, 56, 0.18);
 }
 
 .hero-panel {
@@ -242,6 +257,7 @@ button {
 .hero-panel h2 {
   margin: 22px 0 8px;
   font-family: var(--display-font);
+  font-weight: 700;
   font-size: 28px;
 }
 
@@ -295,6 +311,7 @@ main {
 
 .page-link-card strong {
   font-family: var(--display-font);
+  font-weight: 700;
   font-size: 28px;
   line-height: 1.05;
 }
@@ -358,8 +375,11 @@ main {
 .section-heading h2 {
   margin: 0;
   font-family: var(--display-font);
+  font-weight: 700;
   font-size: 34px;
-  text-shadow: 0 3px 0 rgba(241, 184, 75, 0.16);
+  text-shadow:
+    0 2px 0 rgba(241, 184, 75, 0.45),
+    0 5px 0 rgba(21, 34, 56, 0.1);
 }
 
 .quest-tools {
@@ -791,6 +811,7 @@ main {
 .card-body h3 {
   margin: 0 0 8px;
   font-family: var(--display-font);
+  font-weight: 700;
   font-size: 21px;
 }
 
@@ -870,6 +891,7 @@ main {
   border-radius: 8px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-shadow: 0 2px 0 rgba(21, 34, 56, 0.18);
 }
 
 .quest-button.completed {
@@ -969,6 +991,7 @@ main {
 .modal-body h2 {
   margin: 0 0 10px;
   font-family: var(--display-font);
+  font-weight: 700;
   font-size: 36px;
 }
 
